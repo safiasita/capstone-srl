@@ -73,7 +73,19 @@ if ($ADMIN->fulltree) {
     $setting = new admin_setting_configtextarea('theme_caps/scss', get_string('rawscss', 'theme_caps'),                           
         get_string('rawscss_desc', 'theme_caps'), '', PARAM_RAW);                                                                  
     $setting->set_updatedcallback('theme_reset_all_caches');                                                                        
-    $page->add($setting);                                                                                                           
+    $page->add($setting);
+    
+    // Login page background setting.                                                                                               
+    // We use variables for readability.                                                                                            
+    $name = 'theme_caps/loginbackgroundimage';                                                                                     
+    $title = get_string('loginbackgroundimage', 'theme_caps');                                                                     
+    $description = get_string('loginbackgroundimage_desc', 'theme_caps');                                                          
+    // This creates the new setting.                                                                                                
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'loginbackgroundimage');                             
+    // This means that theme caches will automatically be cleared when this setting is changed.                                     
+    $setting->set_updatedcallback('theme_reset_all_caches');                                                                        
+    // We always have to add the setting to a page for it to have any effect.                                                       
+    $page->add($setting);
  
     $settings->add($page);                                                                                                          
 }
