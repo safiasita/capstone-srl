@@ -5,7 +5,7 @@
 defined('MOODLE_INTERNAL') || die();                                                                                                
  
 // A description shown in the admin theme selector.                                                                                 
-$string['choosereadme'] = 'Theme Caps is a child theme of Boost. It adds the ability to use background photos.';                
+$string['choosereadme'] = 'Theme Caps is a child theme of Boost. It is specially designed for Capstone Project.';                
 // The name of our plugin.                                                                                                          
 $string['pluginname'] = 'Caps Theme';                                                                                                    
 // We need to include a lang string for each block region.                                                                          

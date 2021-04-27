@@ -1,6 +1,7 @@
 // Post SCSS for the theme.
 #nav-drawer {
-    background-color: #28527A;
+    background-color: $primary;
+    font-family: Roboto;
     }
 body.pagelayout-login {                                                                                                             
     background-image: url([[pix:theme_caps|loginbackgroundimage]]);                                                                
@@ -8,10 +9,87 @@ body.pagelayout-login {
     }
 div.card-body {
     background-color: $white;
+    font-family: Roboto;
+    border-width: 0.5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 6px;
 }
 div.card-block {
-    background-color: #28527A;
+    font-family: Roboto;
 }         
 div.card {
-    border-color: #28527A;
+    border-width: 0.5px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+nav {
+    font-family: Roboto;
+}
+#page-content {
+    font-family: Roboto;
+}
+.btn {
+    border-width: 0.5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 6px;
+    font-weight: 500;
+}
+.navbar {
+    box-shadow: 0px 1px 3px;
+}
+#nav-drawer .list-group ul {
+    padding: 10px;
+    margin: 5px; 
+}
+.list-group-item-action {
+    color: $white;
+}
+.list-group-item-action:hover, .list-group-item-action:focus {
+    color: $white;
+    background-color: #728EA8; 
+}
+.list-group-item-action:active {
+    color: $white;
+    background-color: $primary; 
+}
+.list-group-item {
+    background-color: $primary;
+    border: 0px solid rgba(0, 0, 0, 0.125);
+}
+.list-group-item.active {
+    color: $white;
+    background-color: #728EA8;
+    border-color: $primary; 
+}
+.card-title {
+    color: #EFA30A;
+    font-weight: 500;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 500;
+}
+div.page-header-headings {
+    color: #EFA30A;
+}
+.coursebox .content .courseimage img {
+    max-width: 200px;
+    max-height: 200px; 
+}
+a[data-key="home"] {
+    display: none;
+}
+#region-main {
+    border-width: 0.5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 6px;
+}
+a[data-key="calendar"] {
+    display: none;
+}
+a[data-key="contentbank"] {
+    display: none;
+}
+a[data-key="privatefiles"] {
+    display: none;
 }
