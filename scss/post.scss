@@ -1,45 +1,73 @@
 // Post SCSS for the theme.
+body {
+    font-family: Roboto !important;
+    background-color: #fafafa;
+}
+#region-main {
+    background-color: transparent !important;
+    border-width: 0px !important;
+    border-radius: 0px !important;
+}
 #nav-drawer {
     background-color: $primary;
-    font-family: Roboto;
-    }
+}
 body.pagelayout-login {                                                                                                             
     background-image: url([[pix:theme_caps|loginbackgroundimage]]);                                                                
     background-size: cover;                                                                                                        
-    }
-div.card-body {
+}
+.form-control:focus {
+    border-color: #80bdff !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+    border-radius: 5px !important;
+}
+.card-body {
     background-color: $white;
-    font-family: Roboto;
     border-width: 0.5px;
     border-radius: 5px;
-    box-shadow: 0px 1px 6px;
+    box-shadow: 1px 1px 6px;
 }
-div.card-block {
-    font-family: Roboto;
-}         
-div.card {
-    border-width: 0.5px;
-    border-radius: 5px;
-    background-color: #fafafa;
+.btn-primary {
+    border-width: 2px !important;
+    border-radius: 5px !important;
+    font-weight: bold;
+    text-transform: uppercase !important;
 }
-nav {
-    font-family: Roboto;
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+    border-radius: 5px !important;
+    outline: 0 !important;
 }
-#page-content {
-    font-family: Roboto;
+.btn-secondary {
+    border-width: 2px !important;
+    border-radius: 5px !important;
+    text-transform: uppercase !important;
+    font-weight: bold;
+    background-color: white;
+    color: #28527A;
+    border-color: #28527A;
 }
-.btn {
-    border-width: 0.5px;
-    border-radius: 5px;
-    box-shadow: 0px 1px 6px;
-    font-weight: 500;
+.btn-secondary:focus, .btn-secondary.focus {
+    border-radius: 5px !important;
+    outline: 0 !important;
+}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open>.dropdown-toggle.btn-secondary {
+    background-color: whitesmoke !important;
+    color: #28527A !important;
+    border-color: #28527A !important;
 }
 .navbar {
     box-shadow: 0px 1px 3px;
+    background-color: #f9f9f9 !important;
 }
-#nav-drawer .list-group ul {
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0rem !important;
+}
+#drawer-toggle {
+    background-color: #ececec;
+}
+.list-group ul {
     padding: 10px;
-    margin: 5px; 
 }
 .list-group-item-action {
     color: $white;
@@ -63,11 +91,11 @@ nav {
 }
 .card-title {
     color: #EFA30A;
-    font-weight: 500;
 }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: 500;
+    font-weight: bold;
+    color: #EFA30A;
 }
 div.page-header-headings {
     color: #EFA30A;
@@ -78,11 +106,6 @@ div.page-header-headings {
 }
 a[data-key="home"] {
     display: none;
-}
-#region-main {
-    border-width: 0.5px;
-    border-radius: 5px;
-    box-shadow: 0px 1px 6px;
 }
 a[data-key="calendar"] {
     display: none;
