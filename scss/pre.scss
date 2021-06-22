@@ -2,3 +2,16 @@
 $primary: #28527A;
 $input-border-color: #28527A;
 $enable-rounded: true;
+@media all and (max-width: 1024px)  {
+    .path-course-view  .page-header-headings {
+        display : none !important;
+    }
+
+    .path-course-view #page-navbar {
+        display : none !important;
+    }
+
+    .path-course-view #page-header {
+        display : none !important;
+    }
+}

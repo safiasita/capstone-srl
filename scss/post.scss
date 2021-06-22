@@ -9,7 +9,7 @@ body {
     border-radius: 0px !important;
 }
 #nav-drawer {
-    background-color: $primary;
+    background-color: $primary !important;
 }
 body.pagelayout-login {                                                                                                             
     background-image: url([[pix:theme_caps|loginbackgroundimage]]);                                                                
@@ -29,7 +29,7 @@ body.pagelayout-login {
 .btn-primary {
     border-width: 2px !important;
     border-radius: 5px !important;
-    font-weight: bold;
+    font-weight: bold !important;
     text-transform: uppercase !important;
 }
 .btn-primary:focus, .btn-primary.focus {
@@ -41,10 +41,10 @@ body.pagelayout-login {
     border-width: 2px !important;
     border-radius: 5px !important;
     text-transform: uppercase !important;
-    font-weight: bold;
-    background-color: white;
-    color: #28527A;
-    border-color: #28527A;
+    font-weight: bold !important;
+    background-color: white !important;
+    color: #28527A !important;
+    border-color: #28527A !important;
 }
 .btn-secondary:focus, .btn-secondary.focus {
     border-radius: 5px !important;
@@ -63,46 +63,49 @@ body.pagelayout-login {
     outline: 0 !important;
     box-shadow: 0 0 0 0rem !important;
 }
+nav:focus, nav.focus {
+    outline: 0 !important;
+}
 #drawer-toggle {
-    background-color: #ececec;
+    background-color: #ececec !important;
 }
 .list-group ul {
-    padding: 10px;
+    padding: 10px !important;
 }
 .list-group-item-action {
-    color: $white;
+    color: $white !important;
 }
 .list-group-item-action:hover, .list-group-item-action:focus {
-    color: $white;
-    background-color: #728EA8; 
+    color: $white !important;
+    background-color: #728EA8 !important; 
 }
 .list-group-item-action:active {
-    color: $white;
-    background-color: $primary; 
+    color: $white !important;
+    background-color: $primary !important; 
 }
 .list-group-item {
-    background-color: $primary;
-    border: 0px solid rgba(0, 0, 0, 0.125);
+    background-color: $primary !important;
+    border: 0px !important;
 }
 .list-group-item.active {
-    color: $white;
-    background-color: #728EA8;
-    border-color: $primary; 
+    color: $white !important;
+    background-color: #728EA8 !important;
+    border-color: $primary !important; 
 }
 .card-title {
-    color: #EFA30A;
+    color: #EFA30A !important;
 }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-weight: bold;
-    color: #EFA30A;
+    font-weight: 500 !important;
+    color: #EFA30A !important;
 }
 div.page-header-headings {
-    color: #EFA30A;
+    color: #EFA30A !important;
 }
 .coursebox .content .courseimage img {
-    max-width: 200px;
-    max-height: 200px; 
+    max-width: 200px !important;
+    max-height: 200px !important;  
 }
 a[data-key="home"] {
     display: none;
@@ -114,5 +117,23 @@ a[data-key="contentbank"] {
     display: none;
 }
 a[data-key="privatefiles"] {
+    display: none;
+}
+#page-header {
+    display : none;
+}
+#page-my-index #page-header {
+    display: block;
+}
+#page-user-profile #page-header {
+    display: block;
+}
+#page-user-profile #page-navbar {
+    display: none;
+}
+#page-user-preferences #page-header {
+    display: block;
+}
+#page-user-preferences #page-navbar {
     display: none;
 }
