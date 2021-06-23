@@ -8,6 +8,30 @@ body {
     border-width: 0px !important;
     border-radius: 0px !important;
 }
+#page-user-preferences #region-main {
+    background-color: $white !important;
+    border-width: 0.5px !important;
+    border-radius: 5px !important;
+    box-shadow: 1px 1px 6px !important;
+}
+#page-user-preferences #page-header .card {
+    background-color: $white !important;
+    border-width: 0.5px !important;
+    border-radius: 5px !important;
+    box-shadow: 1px 1px 6px !important;
+}
+#page-user-profile #region-main {
+    background-color: $white !important;
+    border-width: 0.5px !important;
+    border-radius: 5px !important;
+    box-shadow: 1px 1px 6px !important;
+}
+#page-user-profile #page-header .card {
+    background-color: $white !important;
+    border-width: 0.5px !important;
+    border-radius: 5px !important;
+    box-shadow: 1px 1px 6px !important;
+}
 #nav-drawer {
     background-color: $primary !important;
 }
@@ -20,11 +44,11 @@ body.pagelayout-login {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
     border-radius: 5px !important;
 }
-.card-body {
-    background-color: $white;
-    border-width: 0.5px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 6px;
+#page-my-index .card-body {
+    background-color: $white !important;
+    border-width: 0.5px !important;
+    border-radius: 5px !important;
+    box-shadow: 1px 1px 6px !important;
 }
 .btn-primary {
     border-width: 2px !important;
@@ -106,6 +130,13 @@ div.page-header-headings {
 .coursebox .content .courseimage img {
     max-width: 200px !important;
     max-height: 200px !important;  
+}
+#page-login-index .card-header .img-fluid {
+    max-width: 200px !important;
+}
+#page-login-signup .card-title .img-fluid {
+    max-width: 200px !important;
+    align-content: center !important;
 }
 a[data-key="home"] {
     display: none;
