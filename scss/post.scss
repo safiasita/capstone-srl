@@ -33,7 +33,7 @@ body {
     box-shadow: 1px 1px 6px !important;
 }
 #nav-drawer {
-    background-color: $primary !important;
+    background-color: #28527A !important;
 }
 body.pagelayout-login {                                                                                                             
     background-image: url([[pix:theme_caps|loginbackgroundimage]]) !important;                                                                
@@ -93,28 +93,30 @@ nav:focus, nav.focus {
 #drawer-toggle {
     background-color: #ececec !important;
 }
-.list-group ul {
+#nav-drawer .list-group ul {
     padding: 10px !important;
+    background-color: #28527A !important;
 }
-.list-group-item-action {
+#nav-drawer .list-group-item-action {
     color: $white !important;
 }
-.list-group-item-action:hover, .list-group-item-action:focus {
+#nav-drawer .list-group-item-action:hover, .list-group-item-action:focus {
+    color: $white !important;
+    background-color: #728EA8 !important;
+    outline: 0px !important; 
+}
+#nav-drawer .list-group-item-action:active {
     color: $white !important;
     background-color: #728EA8 !important; 
 }
-.list-group-item-action:active {
-    color: $white !important;
-    background-color: $primary !important; 
+#nav-drawer .list-group-item {
+    background-color: #28527A !important;
+    border-color: #28527A !important;
 }
-.list-group-item {
-    background-color: $primary !important;
-    border: 0px !important;
-}
-.list-group-item.active {
+#nav-drawer .list-group-item.active {
     color: $white !important;
     background-color: #728EA8 !important;
-    border-color: $primary !important; 
+    border-color: #28527A !important; 
 }
 .card-title {
     color: #EFA30A !important;
