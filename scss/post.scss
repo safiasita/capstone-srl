@@ -1,7 +1,7 @@
 // Post SCSS for the theme.
 body {
     font-family: Roboto !important;
-    background-color: #fafafa;
+    background-color: #fafafa !important;
 }
 #region-main {
     background-color: transparent !important;
@@ -36,8 +36,8 @@ body {
     background-color: $primary !important;
 }
 body.pagelayout-login {                                                                                                             
-    background-image: url([[pix:theme_caps|loginbackgroundimage]]);                                                                
-    background-size: cover;                                                                                                        
+    background-image: url([[pix:theme_caps|loginbackgroundimage]]) !important;                                                                
+    background-size: cover !important;                                                                                                        
 }
 .form-control:focus {
     border-color: #80bdff !important;
@@ -80,7 +80,7 @@ body.pagelayout-login {
     border-color: #28527A !important;
 }
 .navbar {
-    box-shadow: 0px 1px 3px;
+    box-shadow: 0px 1px 3px !important;
     background-color: #f9f9f9 !important;
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
@@ -139,32 +139,32 @@ div.page-header-headings {
     align-content: center !important;
 }
 a[data-key="home"] {
-    display: none;
+    display: none !important;
 }
 a[data-key="calendar"] {
-    display: none;
+    display: none !important;
 }
 a[data-key="contentbank"] {
-    display: none;
+    display: none !important;
 }
 a[data-key="privatefiles"] {
-    display: none;
+    display: none !important;
 }
 #page-header {
-    display : none;
+    display : none !important;
 }
 #page-my-index #page-header {
-    display: block;
+    display: block !important;
 }
 #page-user-profile #page-header {
-    display: block;
+    display: block !important;
 }
 #page-user-profile #page-navbar {
-    display: none;
+    display: none !important;
 }
 #page-user-preferences #page-header {
-    display: block;
+    display: block !important;
 }
 #page-user-preferences #page-navbar {
-    display: none;
+    display: none !important;
 }
